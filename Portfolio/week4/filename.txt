@@ -1,0 +1,10 @@
+a.txt
+b.txt
+c.txt
+folderCopy.sh
+gurav
+qqq
+readPassword.sh
+task4.sh
+test.sh
+userInput.txt

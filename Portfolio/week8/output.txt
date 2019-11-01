@@ -1,0 +1,11 @@
+\033[32m File Downloaded.
+    \033[31mEROOR:\033[0m $1
+This is the start of the script
+Thank you!
+Thank you!
+    \033[31mEROOR:\033[0m $1
+\033[32m You have guessed the correct number\033[0m
+Number is too low
+Number is too high
+    \033[31m$VAR1
+ The area for a triangle with base: $b and height: $h is:  $(($b*$h/2))
