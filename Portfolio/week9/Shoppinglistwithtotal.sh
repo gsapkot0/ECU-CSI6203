@@ -1,25 +1,19 @@
 #!/bin/bash
-echo ""
-awk 'BEGIN {
-    FS=",";
-    printf("--------------------\n")
-    printf "%-15s | %-15s | %-15s | %-10s\n","Item","Quantity","Cost","Total"
-    Printf(---------------------\n")
-    }
-    {
-        printf "%-15s | %-15s | %-15s | %-10s\n",
-        $1,$2,"$"$3,"$"($2*$3)
-    } END {
-    }' shopping.csv
+#Displaying all the text of the shopping list csv file.
+awk 'BEGIN { FS=","; currency = "$";
+    print ("Item         | Quantity | Price      | Amount")
+    } 
+    {     
+        printf ("%-12s | %2d       | %-10s | %-10s\n" ,$1,$2,"$"$3, $2*$3)
+    }' ./shopping.csv
 awk -F',' 'BEGIN {sumquantity=0};
 {sumquantity=sumquantity+$2}
 {sumprice=sumprice+$3}
+{Amount=($2*$3)}
 {totalsum=totalsum+($2*$3)}
 END {
-    printf "%-15s | %-15s | %-15s | %-10s\n",
+    printf "%-12s | %-8s | %-8s   | %-10s\n",
     "TOTAL", sumquantity, "$"(sumprice), "$"(totalsum)
-    printf("------------------\n")
-    printf "Total items: "
-    NR
+       NR
     }' shopping.csv
     echo ""

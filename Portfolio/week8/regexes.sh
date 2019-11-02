@@ -1,13 +1,19 @@
 #!/bin/bash
+#This command searches all sed statements
 grep -r sed
-echo -e "\033[32m All sed statements\033[0m"
+echo -e "All sed statements"
+#This command searches all lines starting with letter m.
 grep -r '^m'
-echo -e "\033[32m All lines starting with letter m\033[0m"
+echo -e "All lines starting with letter m"
+#This command searches all lines having only three digit number.
 grep -r '[0-9][0-9][0-9]'
-echo -e "\033[32m All lines containing three digit numbers.\033[0m"
+echo -e "All lines containing three digit numbers."
+#This command searches all lines starting with vowel.
 grep -r '^[a,e,i,o,u]'
-echo -e "\033[32m All lines that start with vowel.\033[0m"
+echo -e "All lines that start with vowel."
+#This command searches all lines containing loops.
 grep -r '.*(.*)'
-echo -e "\033[32m All lines that contain loops\033[0m"
+echo -e "All lines that contain loops"
+#This command searches all lines containing at least three words.
 grep -r 'echo "[.*][.*][.*}.*"'
-echo -e "\033[32m All echo statements with at least three words.\033[0m"
+echo -e "All echo statements with at least three words."

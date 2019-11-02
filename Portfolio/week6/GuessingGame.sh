@@ -14,7 +14,7 @@ done
 while true;do
 read -p "Please provide a number between 1 and 100 :" REPLY
 if (( $REPLY == 42 )); then
-echo -e "\033[32m You have guessed the correct number\033[0m"
+echo -e "\033[32m You have guessed the right number\033[0m"
 exit 0
 elif (( $REPLY < 42 )); then
 echo "Number is too low"

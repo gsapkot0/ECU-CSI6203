@@ -1,3 +1,4 @@
 #!/bin/bash
-sed -i '/echo .*".*!"/ s/Correct/Right/' ../week6/GuessingGame.sh
+#The word Correct is changed to Right by using this command.
+sed -i 's/correct/right/g' ../week6/GuessingGame.sh 
 sed -rn 's/echo.*"(.*)"/\1/p' ../week6/*.sh > output.txt
