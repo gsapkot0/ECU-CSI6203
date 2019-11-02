@@ -8,4 +8,4 @@ Thank you!
 Number is too low
 Number is too high
     \033[31m$VAR1
- The area for a triangle with base: $b and height: $h is:  $(($b*$h/2))
+   The area for a triangle with base: $b and height: $h is:  $(($b*$h/2))
